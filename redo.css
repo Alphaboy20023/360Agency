@@ -515,7 +515,7 @@ nav li:nth-child(6) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     height: auto;
     gap: 20px;
     padding: 50px;
@@ -524,8 +524,8 @@ nav li:nth-child(6) {
 .last-div h3 {
     font-size: 42px;
     color: rgba(0, 0, 0, 1);
-    padding: 40px;
     width: 80%;
+    padding: 40px;
 }
 
 .customers-sat {
@@ -670,5 +670,15 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
+    }
+    .last-div {
+        padding: 5px;
+    }
+    .last-div h3 {
+        width: 95%;
+        padding: 5px;
+    }
+    .customers-sat {
+        width: 120vh;
     }
 }
