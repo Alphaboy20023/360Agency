@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    position: fixed;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    padding: 0 20px;
+    background-color: #ccc;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    height: auto;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    padding: 20px 22px;
+}
+
+#navbar-hover:hover {
+    background-color: #8b8989;
+    cursor: pointer;
+    border-radius: 7px;
+    transform: scale(1.07);
+    transition: .5s ease-in-out;
+}
+
+.badge {
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+    border-radius: 50%;
+    background-image: url(./img/pavel\ dog.jpg);
+    background-size: cover;
+}
+
+nav li:nth-child(2) {
+    margin-right: auto;
+}
+
+nav li:nth-child(6) {
+    margin-right: auto;
+}
+
+.services {
+    border-radius: 50px;
+    background-color: blue;
+    margin-top: 10px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.6s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.services a {
+    display: inline-block;
+}
+
+.services:hover {
+    background-color: #1e90ff;
+    border-radius: 50px;
+}
+
+.Sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 0 -5px;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.menu-btn {
+    font-size: 35px;
+    color: blue;
+}
+
+.menu-butn {
+    display: none;
+}
+
+.container {
+    background-image: url(./img/Rectangle\ 12.png);
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.design {
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.digital-brand {
+    font-size: 16px;
+    width: 70%;
+    padding: 10px;
+}
+
+.blue-button {
+    border-radius: 25px;
+    background-color: blue;
+    border: none;
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.blue-button a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.right {
+    font-size: 22px;
+    color: #fff;
+    display: inline-block;
+}
+
+.image-box {
+    background-image: url(./img/Agency90.jpg);
+    background-size: cover;
+    width: 90%;
+    border-radius: 15px;
+    max-height: 600px;
+    margin: 10px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-box .website {
+    color: #fff;
+    font-size: 50px;
+    max-width: 709px;
+    place-items: center;
+    display: inline-block;
+}
+
+.image-box .it {
+    color: #fff;
+    font-size: 18.66px;
+    padding: 40px;
+    width: 600;
+}
+
+.numbered-box {
+    display: flex;
+    justify-self: flex-end;
+    margin: 40px;
+    gap: 10px;
+}
+
+.whatwedo-box {
+    width: 750px;
+    max-width: 100%;
+    height: 220px;
+    padding: 5px 10px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    height: 200px;
+    padding: auto;
+    gap: 20px;
+}
+
+.box {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.product-service {
+    width: 100%;
+    max-width: 100%;
+    max-height: auto;
+    padding: 40px;
+    place-content: center;
+    background-color: rgba(22, 93, 245, 0.1);
+}
+
+.product-service #paw {
+    font-size: 50px;
+    justify-self: center;
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.product-service .paw {
+    font-size: 16px;
+    width: 60%;
+    margin: 20px;
+    justify-self: center;
+}
+
+.whatwedo {
+    max-width: 710px;
+    padding: 30px;
+    height: 160px fixed;
+}
+
+.whatwedo .what {
+    font-size: 16px;
+}
+
+.whatwedo h1 {
+    font-size: 32px;
+    padding: 20px;
+}
+
+.whatwedo .pees {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+    justify-self: start;
+}
+
+.grid-container .image-1 {
+    width: 100%;
+    height: 630px;
+}
+
+.grid-container .part-2 {
+    width: 100%;
+    text-align: left;
+}
+
+.grid-container .part-3 {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+}
+
+.grid-container .pep {
+    font-size: 35px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.grid-container .pep2 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    padding-top: 25px;
+}
+
+
+.grid-container .blue-box {
+    background-color: blue;
+    height: 110px;
+    width: 8px;
+    margin-top: 20px;
+}
+
+.grid-container .web {
+    font-size: 24.88px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.grid-container .website {
+    margin-left: auto;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.grid-container .section {
+    padding: 30px;
+    position: relative;
+    bottom: 135px;
+}
+
+.grid-container .website2 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    padding-top: 30px;
+    height: 54px;
+}
+
+.grid-container #Digit {
+    height: 37px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24.4px;
+    padding-top: 25px;
+}
+
+.grid-container #Digit2 {
+    height: 37px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24.4px;
+    padding-top: 50px;
+}
+
+.grid-container .wedo {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    padding-top: 20px;
+    height: 54px;
+    padding-top: 49px;
+}
+
+.fourpics {
+    background-color: rgba(196, 196, 196, 0.1);
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    padding-top: 70px;
+    justify-content: space-evenly;
+}
+
+.fourpics h1 {
+    padding-top: 20px;
+}
+
+.fourpics .pees2 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.fourpics .blue-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    flex-basis: 200;
+    align-self: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 25px;
+}
+
+.blue-buttons button {
+    border-radius: 12px;
+    height: 50px;
+    border: none;
+    background-color: rgba(22, 93, 245, 0.18);
+}
+
+.blue-buttons button a {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.blue-buttons button:nth-child(1) {
+    background-color: rgba(22, 93, 245, 0.6);
+    width: 25vh;
+}
+
+.fourpictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    min-width: 220vh;
+    /* 250vh does not allow content to wrap, hereby keeping if fixed and hides the overflow */
+    transition: transform 0.5s ease-in-out;
+}
+
+.fourpictures .slide {
+    transform: translateX(100%);
+}
+
+.slideBtn {
+    border: none;
+}
+
+.fourpictures div {
+    justify-items: center;
+    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    flex-basis: 200;
+    width: 220vh;
+    height: auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffff;
+    box-shadow: -8px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fourpictures h2 {
+    font-size: 14px;
+    color: rgba(22, 93, 245, 1);
+    height: 18px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.fourpictures p {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+    padding: 10px;
+}
+
+.fourpictures h4 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    padding: 10px;
+    text-align: left;
+}
+
+.fourpictures button {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.fourpictures a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    color: rgba(22, 93, 245, 1);
+}
+
+.left {
+    color: rgba(22, 93, 245, 1);
+    font-size: 20px;
+    display: inline-block;
+}
+
+.last-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 20px;
+    padding: 50px;
+}
+
+.last-div h3 {
+    font-size: 42px;
+    color: rgba(0, 0, 0, 1);
+    padding: 40px;
+    width: 80%;
+}
+
+.customers-sat {
+    display: flex;
+    width: 324vh;
+    gap: 40px;
+    padding: 5px;
+}
+
+.customers-sat span img {
+    gap: 10px;
+    padding: 20px;
+}
+
+.customers-sat span h6 {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.customers-sat span h5 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.customers-sat span h4 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    padding-top: 12px;
+}
+
+.customers-sat .lin-gradient {
+    background: linear-gradient(right, rgba(255, 255, 255, 1) rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+footer {
+    background-color: blue;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer ul li {
+    margin: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer  p {
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+  }
+
+@media (max-width:1200px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-butn {
+        display: block;
+    }
+
+    .content {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 120px;
+    }
+
+    .design {
+        font-size: 25px;
+    }
+
+    .product-service #paw {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .product-service .paw {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .image-box .website {
+        font-size: 30px;
+        text-align: center;
+        width: auto;
+
+    }
+
+    .image-box .it {
+        font-size: 13px;
+        text-align: center;
+        width: auto;
+    }
+
+    .image-box {
+        padding: 28px;
+        max-height: auto;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .box {
+        height: auto;
+        flex-grow: 2;
+        flex-basis: 400;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
