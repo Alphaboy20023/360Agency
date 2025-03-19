@@ -183,6 +183,21 @@
     .picture-container {
         margin-bottom: 90px !important;
     }
+
+    .carousel-container{
+    max-width: 85%;
+    margin: 27px auto;
+    }
+    
+    .prevbtn {
+        position: relative;
+        right: 14px;
+    }
+
+    .nextbtn {
+        position: relative;
+        left: 14px;
+    }
 }
 
 @media (min-width: 900px) {
