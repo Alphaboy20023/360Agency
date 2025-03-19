@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     box-sizing: border-box;
-    font-family: 'poppins';
+    font-family: 'poppins' , Times, serif;
 }
 
 body {
     min-height: 100vh;
-    min-width: 100%;
     font-weight: 600;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    flex-wrap: nowrap !important;
+
 }
 
 nav {
-    position: fixed;
+    position: fixed !important;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.9);
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
     z-index: 1000;
-    display: flex;
-    padding: 0 20px;
+    display: flex !important;
+    padding: 0 20px !important;
     background-color: #ccc;
+    height: 65px !important;
 }
 
 nav ul {
@@ -46,7 +50,7 @@ nav ul li a {
     text-align: center;
     justify-content: center;
     color: black;
-    padding: 20px 22px;
+    padding: 20px 22px !important;
 }
 
 #navbar-hover:hover {
@@ -62,7 +66,7 @@ nav ul li a {
     width: 40px;
     margin: 15px;
     border-radius: 50%;
-    background-image: url(./img/pavel\ dog.jpg);
+    background-image: url(./img/pavel\ dog.jpg) ;
     background-size: cover;
 }
 
@@ -121,7 +125,7 @@ nav li:nth-child(6) {
     display: none;
 }
 
-.container {
+.containers {
     background-image: url(./img/Rectangle\ 12.png);
     background-size: cover;
     display: block;
@@ -129,6 +133,9 @@ nav li:nth-child(6) {
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding: 0;
+    margin: 0;
+    margin-left: -10px;
 }
 
 .content {
@@ -138,6 +145,7 @@ nav li:nth-child(6) {
     text-align: center;
     margin-top: 150px;
     overflow: hidden;
+    width: 100% !important;
 }
 
 .design {
@@ -189,7 +197,7 @@ nav li:nth-child(6) {
     width: 90%;
     border-radius: 15px;
     max-height: 600px;
-    margin: 10px;
+    margin: 60px;
     padding: 80px;
     display: flex;
     align-items: center;
@@ -378,13 +386,15 @@ nav li:nth-child(6) {
 }
 
 .fourpics {
-    background-color: rgba(196, 196, 196, 0.1);
-    width: 100%;
+    
+    /* width: 100%; */
     height: auto;
     margin: 20px;
     padding-top: 70px;
     justify-content: space-evenly;
+    
 }
+
 
 .fourpics h1 {
     padding-top: 20px;
@@ -427,88 +437,17 @@ nav li:nth-child(6) {
     width: 25vh;
 }
 
-.fourpictures {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 10px;
-    height: auto;
-    width: 100%;
-    min-width: 220vh;
-    /* 250vh does not allow content to wrap, hereby keeping if fixed and hides the overflow */
-    transition: transform 0.5s ease-in-out;
+
+.bxs-chevron-left-circle {
+    font-size: 35px;
 }
 
-.fourpictures .slide {
-    transform: translateX(100%);
+.bxs-chevron-right-circle{
+    font-size: 35px;
 }
 
-.slideBtn {
-    border: none;
-}
 
-.fourpictures div {
-    justify-items: center;
-    place-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 4;
-    flex-basis: 200;
-    width: 220vh;
-    height: auto;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #ffff;
-    box-shadow: -8px 5px 10px rgba(0, 0, 0, 0.5);
-}
 
-.fourpictures h2 {
-    font-size: 14px;
-    color: rgba(22, 93, 245, 1);
-    height: 18px;
-    text-align: left;
-    margin-left: 10px;
-}
-
-.fourpictures p {
-    font-size: 17px;
-    color: rgba(0, 0, 0, 1);
-    text-align: left;
-    padding: 10px;
-}
-
-.fourpictures h4 {
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: 500;
-    padding: 10px;
-    text-align: left;
-}
-
-.fourpictures button {
-    border: none;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-.fourpictures a {
-    text-decoration: none;
-    padding: 10px;
-    font-size: 14px;
-    color: rgba(22, 93, 245, 1);
-}
-
-.left {
-    color: rgba(22, 93, 245, 1);
-    font-size: 20px;
-    display: inline-block;
-}
 
 .last-div {
     display: flex;
@@ -519,6 +458,7 @@ nav li:nth-child(6) {
     height: auto;
     gap: 20px;
     padding: 50px;
+    margin-top: 30px !important;
 }
 
 .last-div h3 {
@@ -530,7 +470,7 @@ nav li:nth-child(6) {
 
 .customers-sat {
     display: flex;
-    width: 324vh;
+    width: 310vh;
     gap: 40px;
     padding: 5px;
 }
@@ -595,6 +535,10 @@ footer {
     padding: 8px;
   }
 
+  
+
+
+
 @media (max-width:1200px) {
     .hideOnMobile {
         display: none;
@@ -642,6 +586,7 @@ footer {
     .image-box {
         padding: 28px;
         max-height: auto;
+        margin: 20px;
     }
 
     .container2 {
@@ -673,12 +618,13 @@ footer {
     }
     .last-div {
         padding: 5px;
+        margin-top: 80px !important;
     }
     .last-div h3 {
         width: 95%;
         padding: 5px;
     }
     .customers-sat {
-        width: 120vh;
+        width: 140vh;
     }
 }
